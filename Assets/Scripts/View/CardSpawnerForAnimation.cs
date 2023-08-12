@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 namespace View
@@ -8,6 +9,7 @@ namespace View
         public Animator cardAnimator; // Animator for the card animation
         public GameObject cardPrefab; // Prefab of the card to spawn
         public int numberOfCardsToSpawn = 52; // Number of cards to spawn
+        public Transform cardSpawnTransform; // Transform of the card spawn point
         public List<GameObject> spawnedCards; // List of spawned cards
         public void SpawnCardsWithAnimation()
         {
@@ -20,8 +22,12 @@ namespace View
             for (int i = 1; i <= numberOfCardsToSpawn; i++)
             {
                 spawnPosition.z = startingZPosition + (zGapBetweenCards * i);
-                spawnedCards.Add(Instantiate(cardPrefab, spawnPosition, Quaternion.identity));
+                spawnPosition.x = i * 0.5f;
+                spawnedCards.Add(Instantiate(cardPrefab, spawnPosition, Quaternion.identity, cardSpawnTransform));
             }
+            cardSpawnTransform.transform.DOLocalMove(new Vector3(25, 0, 0), 1f);
         }
+        
+        
     }
 }

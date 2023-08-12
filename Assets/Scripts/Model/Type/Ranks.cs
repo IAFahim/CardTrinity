@@ -2,7 +2,7 @@
 {
     public enum Ranks
     {
-        Locked = 0,
+        Hidden = 0,
         Ace = 1,
         Two = 2,
         Three = 3,
