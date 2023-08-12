@@ -1,8 +1,7 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
-namespace Card_Spawn
+namespace Controller.MonoBehaviours.Spawn
 {
     public class CardSpawn : MonoBehaviour
     {

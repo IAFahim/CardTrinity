@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a3515da11942bd94b5c0d4ebe4bb32, type: 3}
+  m_Name: BasicSkin
+  m_EditorClassIdentifier: 
+  cardHidden: {fileID: 21300000, guid: c229a14c083ae5148856f405e0e7a820, type: 3}
+  cardFaceHearts:
+  - {fileID: 21300000, guid: 2640a84203e13ef48b803c8aa83961ee, type: 3}
+  - {fileID: 21300000, guid: 4ae08bfabd7662b46a82b7b67830b4ab, type: 3}
+  - {fileID: 21300000, guid: 50bbc9e67ecdcb54b861f0140d1b1679, type: 3}
+  cardFaceDiamonds: []
+  cardFaceClubs: []
+  cardFaceSpades: []
+  cardBack: {fileID: 21300000, guid: 0b5400a504ab9ef4986bbba78f4c1794, type: 3}
